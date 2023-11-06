@@ -1,7 +1,5 @@
 package br.com.musicproject.modelos;
 
-import br.com.musicproject.modelos.Media;
-
 public class Musics extends Media {
 
     private String artist;

@@ -25,7 +25,11 @@ public class Main {
 
         Podcasts podPimps = new Podcasts();
         podPimps.setTitle("PodPimps");
-        podPimps.setHost("Akley");
+        podPimps.setHost("\nAkley");
+        System.out.println(podPimps.getHost());
+        podPimps.setDescription("Podcast dirigido e criado por: Akley Alves");
+        System.out.println(podPimps.getDescription());
+
 
         for (int i = 0; i < 200; i++) {
             podPimps.like();
