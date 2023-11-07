@@ -41,6 +41,6 @@ public class Musics extends Media {
 
     @Override
     public String toString() {
-        return "Musics: " + getTitle();
+        return "Musics: " + getTitle() + " (" + getArtist() + ")";
     }
 }

@@ -10,10 +10,12 @@ public class Main {
     public static void main(String[] args) {
 
         Musics asas = new Musics();
-        asas.setTitle("Asas - Duzz");
+        asas.setTitle("Asas");
+        asas.setArtist("Duzz");
 
         Musics prostituto = new Musics();
-        prostituto.setTitle("Prostituto - Cjota");
+        prostituto.setTitle("Prostituto");
+        prostituto.setArtist("Cjota");
 
         for (int i = 0; i < 500; i++) {
             asas.like();
@@ -57,10 +59,6 @@ public class Main {
         System.out.println("Titulo: " + prostituto.getTitle());
 
         System.out.println(playlist);
-
-
-
-
 
     }
 }
