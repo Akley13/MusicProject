@@ -4,11 +4,16 @@ import br.com.musicproject.modelos.FavoriteMedia;
 import br.com.musicproject.modelos.Musics;
 import br.com.musicproject.modelos.Podcasts;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
         Musics asas = new Musics();
         asas.setTitle("Asas - Duzz");
+
+        Musics prostituto = new Musics();
+        prostituto.setTitle("Prostituto - Cjota");
 
         for (int i = 0; i < 500; i++) {
             asas.like();
@@ -41,6 +46,21 @@ public class Main {
 
         podPimps.dataSheet();
         favorite.adds(podPimps);
+
+        ArrayList<Musics> playlist = new ArrayList<>();
+
+        playlist.add(asas);
+        playlist.add(prostituto);
+
+        System.out.println("\nMusics: " + playlist.size());
+        System.out.println("Titulo: " + asas.getTitle());
+        System.out.println("Titulo: " + prostituto.getTitle());
+
+        System.out.println(playlist);
+
+
+
+
 
     }
 }
